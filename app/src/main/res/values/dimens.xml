@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_out">100dp</dimen>
+    <dimen name="textSize">50sp</dimen>
+    <dimen name="paddingAll">15dp</dimen>
+    <dimen name="textButtonSize">25sp</dimen>
+</resources>

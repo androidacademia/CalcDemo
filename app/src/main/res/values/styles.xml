@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CalButton">
+        <item name="android:height">80dp</item>
+        <item name="android:width">80dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textButtonSize</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="OpsButton">
+        <item name="android:height">80dp</item>
+        <item name="android:width">80dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textButtonSize</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="RoundButton">
+        <item name="android:background">@drawable/round_shape</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="RoundOps">
+        <item name="android:background">@drawable/round_ops</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="RoundButton.Large">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+    <style name="RoundOps.Large">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+
+</resources>

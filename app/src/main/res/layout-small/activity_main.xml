@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="calcdemo.androidacademia.com.calcdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="328dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:gravity="right|center"
+        android:padding="@dimen/paddingAll"
+        android:scrollHorizontally="true"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fabDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:onClick="button7"
+                    android:id="@+id/button7"
+                    android:text="7"
+                    style="@style/RoundButton" />
+
+                <Button
+                    android:onClick="button8"
+                    android:id="@+id/button8"
+                    android:text="8"
+                    style="@style/RoundButton" />
+
+                <Button
+                    android:onClick="button9"
+                    android:id="@+id/button9"
+                    android:text="9"
+                    style="@style/RoundButton"  />
+                <Button
+                    android:onClick="buttonDiv"
+                    android:id="@+id/buttonDiv"
+                    android:text="÷"
+                    style="@style/RoundOps" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:onClick="button4"
+                    android:id="@+id/button4"
+                    android:text="4"
+                    style="@style/RoundButton"  />
+
+                <Button
+                    android:onClick="button5"
+                    android:id="@+id/button5"
+                    android:text="5"
+                    style="@style/RoundButton"  />
+
+                <Button
+                    android:onClick="button6"
+                    android:id="@+id/button6"
+                    android:text="6"
+                    style="@style/RoundButton"  />
+                <Button
+                    android:onClick="buttonMul"
+                    android:id="@+id/buttonMul"
+                    android:text="x"
+                    style="@style/RoundOps" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:onClick="button1"
+                    android:id="@+id/button1"
+                    android:text="1"
+                    style="@style/RoundButton"  />
+
+                <Button
+                    android:onClick="button2"
+                    android:id="@+id/button2"
+                    android:text="2"
+                    style="@style/RoundButton"  />
+
+                <Button
+                    android:onClick="button3"
+                    android:id="@+id/button3"
+                    android:text="3"
+                    style="@style/RoundButton"  />
+                <Button
+                    android:onClick="buttonAdd"
+                    android:id="@+id/buttonAdd"
+                    android:text="+"
+                    style="@style/RoundOps" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:onClick="buttonDot"
+                    android:id="@+id/buttonDot"
+                    android:text="."
+                    style="@style/RoundButton"  />
+
+                <Button
+                    android:onClick="button0"
+                    android:id="@+id/button0"
+                    android:text="0"
+                    style="@style/RoundButton" />
+
+                <Button
+                    android:onClick="buttonEq"
+                    android:id="@+id/buttonEq"
+                    android:text="="
+                    style="@style/RoundButton"  />
+                <Button
+                    android:onClick="buttonSub"
+                    android:id="@+id/buttonSub"
+                    android:text="-"
+                    style="@style/RoundOps" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_action_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+</android.support.constraint.ConstraintLayout>
